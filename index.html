@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Coast Coffee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coast Coffee | Fresh Coffee & Homemade Bakes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="favicon.jpeg">
 </head>
 
 <body>
@@ -10,7 +12,7 @@
     <nav>
         <h2>COAST COFFEE</h2>
 
-        <div>
+        <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#menu">Menu</a>
             <a href="#about">About</a>
@@ -19,6 +21,7 @@
     </nav>
 
 
+    <main>
     <section id="home" class="hero">
 
     <div class="hero-text">
@@ -56,28 +59,16 @@
 
 </section>
 
-        <div class="hero-text">
-            <p class="small-title">COFFEE • FOOD • COMMUNITY</p>
-
-            <h1>Good coffee.<br>Good company.</h1>
-
-            <p>
-                Freshly roasted coffee, homemade food and a place
-                to slow down and enjoy the moment.
-            </p>
-
-            <a href="#menu" class="button">View our menu</a>
-        </div>
-
-    </section>
-
 
     <section id="menu" class="menu">
 
     <div class="section-heading">
         <p>WHAT'S ON THE MENU</p>
         <h2>Our favourites</h2>
-        <span>Made fresh. Served with love.</span>
+        <p class="menu-intro">
+    Coffee, pastries and homemade treats — made fresh every day.
+</p>
+        <span>Made fresh.Served with love.</span>
     </div>
 
 
@@ -85,7 +76,7 @@
 
         <div class="card">
 
-            <img src="Cappucino.jpeg" alt="Cappuccino">
+            <img src="Cappucino.jpeg" alt="Cappuccino" loading="lazy">
 
             <div class="card-content">
                 <div class="card-title">
@@ -104,7 +95,7 @@
 
         <div class="card">
 
-            <img src="Croissant.jpeg" alt="Fresh croissant">
+            <img src="Croissant.jpeg" alt="Fresh croissant" loading="lazy">
 
             <div class="card-content">
                 <div class="card-title">
@@ -123,7 +114,7 @@
 
         <div class="card">
 
-            <img src="Cake slice + coffee.jpeg" alt="Carrot cake">
+            <img src="Cake slice + coffee.jpeg" alt="Carrot cake" loading="lazy">
 
             <div class="card-content">
                 <div class="card-title">
@@ -143,37 +134,11 @@
 
 </section>
 
-        <h2>Our favourites</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>☕ Cappuccino</h3>
-                <p>Rich espresso with silky steamed milk.</p>
-                <strong>£3.20</strong>
-            </div>
-
-            <div class="card">
-                <h3>🥐 Fresh Croissant</h3>
-                <p>Buttery, flaky and baked fresh every morning.</p>
-                <strong>£2.80</strong>
-            </div>
-
-            <div class="card">
-                <h3>🍰 Carrot Cake</h3>
-                <p>Homemade carrot cake with cream cheese icing.</p>
-                <strong>£4.20</strong>
-            </div>
-
-        </div>
-
-    </section>
-
 
     <section id="about" class="about">
 
     <div class="about-image">
-        <img src="Barista.jpeg" alt="Coffee being prepared">
+        <img src="Barista2.jpeg" alt="Coffee being prepared" loading="lazy">
     </div>
 
     <div class="about-text">
@@ -200,8 +165,6 @@
     </div>
 
 </section>
-
-    </section>
 
 
    <section id="visit" class="visit">
@@ -270,6 +233,7 @@
     class="directions-button"
     href="https://www.google.com/maps/search/?api=1&query=123+Coast+Road+North+Wales"
     target="_blank"
+    rel="noopener noreferrer"
 >
     Get directions →
 </a>
@@ -281,7 +245,6 @@
 
 </section>
 
-    </section>
 <section class="instagram">
 
     <p class="section-label">FOLLOW ALONG</p>
@@ -292,16 +255,70 @@
 
     <div class="instagram-grid">
 
-        <img src="cappuccino.jpg" alt="Coffee">
-        <img src="about.jpg" alt="Coffee shop">
-        <img src="croissant.jpg" alt="Croissant">
+        <img src="Cappucino.jpeg" alt="Cappuccino" loading="lazy">
+        <img src="Coffee shop.jpeg" alt="Coffee shop" loading="lazy">
+        <img src="Croissant.jpeg" alt="Croissant" loading="lazy">
 
     </div>
 
 </section>
+    </main>
     <footer>
-        <p>© 2026 Coast Coffee</p>
-    </footer>
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+            <h2>COAST COFFEE</h2>
+
+            <p>
+                Good coffee. Good food. Good company.
+            </p>
+        </div>
+
+
+        <div class="footer-links">
+
+            <div>
+                <h3>Explore</h3>
+
+                <a href="#menu">Menu</a>
+                <a href="#about">Our Story</a>
+                <a href="#visit">Visit Us</a>
+            </div>
+
+
+            <div>
+                <h3>Contact</h3>
+
+                <a href="tel:01234567890">01234 567890</a>
+                <a href="mailto:hello@coastcoffee.co.uk">
+                    hello@coastcoffee.co.uk
+                </a>
+            </div>
+
+
+            <div>
+                <h3>Social</h3>
+
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>© 2026 Coast Coffee. All rights reserved.</p>
+
+        <p>Made with ☕ in North Wales</p>
+
+    </div>
+
+</footer>
 <script>
 
 const elements = document.querySelectorAll(
